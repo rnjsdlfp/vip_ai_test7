@@ -64,7 +64,7 @@ if prompt := st.chat_input():
         if run.status == "completed":
             break
         else:
-            time.sleep(2)
+            time.sleep(1)
 
     thread_messages = client.beta.threads.messages.list(thread_id)
     msg = thread_messages.data[0].content[0].text.value
