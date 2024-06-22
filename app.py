@@ -20,10 +20,10 @@ with st.sidebar:
         st.subheader(f"{thread_id}")
         st.info("Thread created!")
 
-st.title("💬 VIP AI")
+st.title("💬 AI for VIP Information System")
 
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "저는 AI 인턴입니다. 무엇이든지 시켜주시면, 최선을 다해 답변드리겠습니다."}]
+    st.session_state["messages"] = [{"role": "assistant", "content": "저는 AI 인턴입니다. VIS DB의 내용을 구석구석 뒤져서 최선을 다해 답변드리겠습니다. VIS DB에 관련된 내용만 질문해주세요."}]
 
 model: str = st.selectbox("Model", options=MODEL_LIST)  # type: ignore
 
