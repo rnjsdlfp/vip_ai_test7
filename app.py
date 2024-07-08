@@ -23,7 +23,7 @@ with st.sidebar:
     st.markdown("---")  # 구분선 추가
     st.subheader("Pre-written Prompt Templates")
     
-    st.code("""1.종목별 투자 아이디어 요약
+    st.code("""<종목별 투자 아이디어 요약>
 1. 최종목표: '종목명' 투자 아이디어 요약
 2. 추가 데이터 제공 여부 : RAG 목적의 OpenAI Assistant API Vector DB
 3. 참고할 데이터 범위 : RAG 용도의 Vector DB 전체를 우선적으로 참고하고, 나머지는 이미 학습된 데이터 및 실시간 검색 결과 참고
@@ -39,7 +39,7 @@ with st.sidebar:
 13. 현재 날짜 및 시간 : 2024년 7월 7일
 14. 출처표시 : 하지 말 것""", language="plaintext")
     
-    st.code("""2.종목별 최근 주가 변동 원인 설명
+    st.code("""<종목별 최근 주가 변동 원인 설명>
 1. 최종목표: '종목명' 최근 주가 하락 원인 및 전망에 대한 코멘트 작성
 2. 추가 데이터 제공 여부 : RAG 목적의 OpenAI Assistant API Vector DB
 3. 참고할 데이터 범위 : RAG 용도의 Vector DB 전체를 우선적으로 참고하고, 나머지는 이미 학습된 데이터 및 실시간 검색 결과 참고
@@ -55,7 +55,7 @@ with st.sidebar:
 13. 현재 날짜 및 시간 : 2024년 7월 7일
 14. 출처표시 : 하지 말 것""", language="plaintext")
     
-    st.code("""3. 시황/전망 코멘트 작성
+    st.code("""<시황/전망 코멘트 작성>
 1. 최종목표: '국내 증시에 대한 단기 및 중기 전망, 그리고 펀드의 대응 계획에 관한 코멘트 작성'
 2. 추가 데이터 제공 여부 : RAG 목적의 OpenAI Assistant API Vector DB
 3. 참고할 데이터 범위 : RAG 용도의 Vector DB 전체를 우선적으로 참고하고, 나머지는 이미 학습된 데이터 및 실시간 검색 결과 참고
