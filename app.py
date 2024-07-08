@@ -20,6 +20,30 @@ with st.sidebar:
         st.subheader(f"{thread_id}")
         st.info("Thread created!")
 
+        st.markdown("---")  # 구분선 추가
+        st.subheader("Pre-written Prompt Templates")
+    
+        st.code("""1.종목별 투자 아이디어 요약
+1. 최종목표: '종목명' 투자 아이디어 요약
+2. 추가 데이터 제공 여부 : RAG 목적의 OpenAI Assistant API Vector DB
+3. 참고할 데이터 범위 : RAG 용도의 Vector DB 전체를 우선적으로 참고하고, 나머지는 이미 학습된 데이터 및 실시간 검색 결과 참고
+4. 역할부여 : 매우 똑똑하고 전문적인 금융 전문가 애널리스트, 가치투자자 성향 보유
+5. 배경정보 : 시장 변동성 확대에 따라 펀드 판매사 담당자 및 고객들의 우려 증가
+6. 글의 종류 : 코멘트
+7. 결과물의 형식 : Bullet Point 3~5개, Sub-topic은 표시하지 말 것. 
+8. 선호하는 결과물의 내용 구성 (해당 종목이 포함된 산업의 구조적 변화 및 방향성, 해당 종목의 개별적인 투자 아이디어, 중장기 전망)
+9. 작성언어 : 한국어
+10. 문체 : 개조식
+11. 제한사항 : 구체적인 수치는 가급적 피할 것, 필요시 반드시 첨부된 DB 내에서만 참고, 목표주가 및 기대수익률에 대한 내용 제외할 것
+12. 답변에 대한 해설 : 불필요
+13. 현재 날짜 및 시간 : 2024년 7월 7일
+14. 출처표시 : 하지 말 것""", language="plaintext")
+    
+        st.code("""2.종목별 최근 주가 변동 원인 설명""", language="plaintext")
+    
+        st.code("""3. 시황/전망 코멘트 작성""", language="plaintext")
+
+
 st.title("💬 AI for VIP Information System")
 
 if "messages" not in st.session_state:
