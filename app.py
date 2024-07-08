@@ -77,6 +77,14 @@ with st.sidebar:
 
 st.title("💬 AI for VIP Information System")
 
+st.markdown("""
+<style>
+.stTextInput > div > div > input {
+    height: 100px;
+}
+</style>
+""", unsafe_allow_html=True)
+
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "저는 AI 인턴입니다. VIS DB의 내용을 구석구석 뒤져서 최선을 다해 답변드리겠습니다. VIS DB에 관련된 내용만 질문해주세요."}]
 
