@@ -6,7 +6,8 @@ MODEL_LIST = ["gpt-4o", "gpt-3.5-turbo", "gpt-4-turbo"]
 assistant_id = "asst_Dlr6YRJen7llwFxT393E5noC"
 
 def copy_to_prompt(text):
-    st.session_state['prompt_input'] = text
+    st.session_state['copied_text'] = text
+    st.success("Template copied! You can now paste it into the chat input.")
 
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
@@ -90,10 +91,10 @@ model: str = st.selectbox("Model", options=MODEL_LIST)  # type: ignore
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
 
-if "prompt_input" not in st.session_state:
-    st.session_state["prompt_input"] = ""
+if 'copied_text' in st.session_state:
+    st.info("A template has been copied. You can paste it into the chat input below.")
 
-prompt = st.chat_input(key="prompt_input")
+prompt = st.chat_input()
 
 if prompt:
     if not openai_api_key:
