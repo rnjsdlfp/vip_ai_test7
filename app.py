@@ -89,14 +89,18 @@ with st.sidebar:
 
 
 st.title("💬 AI for VIP Information System")
+initial_message = (
+    "저는 VIP AI 입니다. VIS DB의 내용을 구석구석 뒤져서 최선을 다해 답변드리겠습니다. "
+    "VIS DB에 관련된 내용만 질문해주세요.\n"
+    "<VIP AI 사용법>\n"
+    " 1. 전달 받은 OpenAI API Key를 복사 & 붙여넣기 하여 입력한다.\n"
+    " 2. 'Create a new thread' 버튼을 누르고, 아래에 생선된 thread ID (thread_XXXXXXXXXXXXXXXXXXX 형식)를 복사한 후 Thread ID 란에 붙여넣는다.\n"
+    " 3. 궁금한 사항(Prompt)을 Prompt창에 입력한다.\n"
+    "※ 더 나은 결과물을 얻고 싶거나, Prompt를 직접 작성하기 어렵다면, 화면 좌측에 위치한 'Pre-written Prompt Templates'의 Drop-down을 열고 해당 내용을 복사&붙여넣기 한 후에 필요한 내용만 수정하여 Prompt창에 입력한다."
+)
 
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "저는 VIP AI 입니다. VIS DB의 내용을 구석구석 뒤져서 최선을 다해 답변드리겠습니다. VIS DB에 관련된 내용만 질문해주세요.
-    <VIP AI 사용법>
-     1. 전달 받은 OpenAI API Key를 복사 & 붙여넣기 하여 입력한다.
-     2. 'Create a new thread' 버튼을 누르고, 아래에 생선된 thread ID (thread_XXXXXXXXXXXXXXXXXXX 형식)를 복사한 후 Thread ID 란에 붙여넣는다.
-     3. 궁금한 사항(Prompt)을 Prompt창에 입력한다.
-     ※ 더 나은 결과물을 얻고 싶거나, Prompt를 직접 작성하기 어렵다면, 화면 좌측에 위치한 'Pre-written Prompt Templates'의 Drop-down을 열고 해당 내용을 복사&붙여넣기 한 후에 필요한 내용만 수정하여 Prompt창에 입력한다."}]
+    st.session_state.messages = [{"role": "assistant", "content": initial_message}]
 
 model: str = st.selectbox("Model", options=MODEL_LIST)  # type: ignore
 
