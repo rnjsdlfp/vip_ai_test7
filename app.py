@@ -96,6 +96,7 @@ initial_message = (
     " 1. 전달 받은 OpenAI API Key를 복사 & 붙여넣기 하여 입력합니다.\n"
     " 2. 'Create a new thread' 버튼을 누르고, 아래에 생선된 thread ID (thread_XXXXXXXXXXXXXXXXXXX 형식)를 복사한 후 Thread ID 란에 붙여넣습니다.\n"
     " 3. 궁금한 사항(Prompt)을 Prompt창에 입력합니다.\n"
+    " 4. VIP AI와 나누는 대화의 주제가 바뀌거나(이전의 내용과 연속성이 없는 경우), 대답을 제대로 하지 못할 때에는 새로운 Thread를 생성하여 적용하는 것이 좋습니다.\n"	
     "\n※ 더 나은 결과물을 얻고 싶거나, Prompt를 직접 작성하기 어렵다면, 화면 좌측에 위치한 'Pre-written Prompt Templates'의 Drop-down을 열고 해당 내용을 Prompt 창에 복사&붙여넣기 한 후에 필요한 내용만 수정한 후에 Enter를 입력합니다."
 )
 
