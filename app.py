@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 import time
 
-MODEL_LIST = ["gpt-4o", "gpt-3.5-turbo", "gpt-4-turbo"]
+MODEL_LIST = ["gpt-4o", "gpt-4o-mini", "gpt-3.5-turbo", "gpt-4-turbo"]
 assistant_id = "asst_Dlr6YRJen7llwFxT393E5noC"
 
 with st.sidebar:
