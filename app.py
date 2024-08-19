@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 import time
 
-MODEL_LIST = ["gpt-4o-2024-08-06", "gpt-4o", "gpt-4o-mini", "gpt-3.5-turbo", "gpt-4-turbo"]
+MODEL_LIST = ["gpt-4o-latest", "gpt-4o-2024-08-06", "gpt-4o", "gpt-4o-mini", "gpt-3.5-turbo", "gpt-4-turbo"]
 assistant_id = "asst_9J6Vvl01IO9bL8J8FI6twfh2"
 
 with st.sidebar:
@@ -103,7 +103,7 @@ with st.sidebar:
 
 st.title("💬 AI for VIP Information System")
 initial_message = (
-    "저는 VIP AI(Latest Update 2024/08/17) 입니다. VIS DB의 내용을 구석구석 뒤져서 최선을 다해 답변드리겠습니다. "
+    "저는 VIP AI(Latest Update 2024/08/18) 입니다. VIS DB의 내용을 구석구석 뒤져서 최선을 다해 답변드리겠습니다. "
     "VIS DB에 관련된 내용만 질문해주세요.\n"
     "\n<VIP AI 사용법>\n"
     " 1. 전달 받은 OpenAI API Key를 복사 & 붙여넣기 하여 입력합니다.\n"
