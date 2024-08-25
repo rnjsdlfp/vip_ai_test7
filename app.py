@@ -101,6 +101,10 @@ with st.sidebar:
 11. 출처표시 : 결과물의 마지막 부분에 표시하고, '제목, 작성자, 작성일자'의 형태로 출력할 것
 12. 결과물 : 총 3개의 결과물을 Version별로 제시해줘. 각 Version은 내용별 중요도의 가중치 변화, 구체적인 수치 유무의 차이, 결론 및 미래전망 포함 유무의 차이 등으로 차별화를 할 것""", language="plaintext")
 
+    with st.expander("Feedback Prompt Templates"):
+        st.code("""- 각 문장별 길이가 너무 짧으니, 직전 결과물 대비 2배의 분량으로 늘려서 다시 작성해주세요.
+- 각 Bullet Point의 출처는 제거하고, 출처는 결과물의 가장 마지막에만 한번에 표시해주세요.""", language="plaintext")
+	    
 st.title("💬 AI for VIP Information System")
 initial_message = (
     "저는 VIP AI(Latest Update 2024/08/18) 입니다. VIS DB의 내용을 구석구석 뒤져서 최선을 다해 답변드리겠습니다. "
