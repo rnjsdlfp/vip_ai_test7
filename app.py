@@ -109,7 +109,7 @@ with st.sidebar:
 	    
 st.title("💬 AI for VIP Information System")
 initial_message = (
-    "저는 VIP AI(Latest Update 2024/08/18) 입니다. VIS DB의 내용을 구석구석 뒤져서 최선을 다해 답변드리겠습니다. "
+    "저는 VIP AI(Latest Update 2024/08/25) 입니다. VIS DB의 내용을 구석구석 뒤져서 최선을 다해 답변드리겠습니다. "
     "VIS DB에 관련된 내용만 질문해주세요.\n"
     "\n<VIP AI 사용법>\n"
     " 1. 전달 받은 OpenAI API Key를 복사 & 붙여넣기 하여 입력합니다.\n"
