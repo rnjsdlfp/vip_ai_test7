@@ -103,7 +103,9 @@ with st.sidebar:
 
     with st.expander("Feedback Prompt Templates"):
         st.code("""- 각 문장별 길이가 너무 짧으니, 직전 결과물 대비 2배의 분량으로 늘려서 다시 작성해주세요.
-- 각 Bullet Point의 출처는 제거하고, 출처는 결과물의 가장 마지막에만 한번에 표시해주세요.""", language="plaintext")
+- 각 Bullet Point의 출처는 제거하고, 출처는 결과물의 가장 마지막에만 한번에 표시해주세요.
+- 수치를 포함한 내용은 제거하고, 내용의 배경과 설명을 보충해서 다시 작성해주세요.
+- 투자의견, 핵심논리, 목표주가, 밸류에이션, 기대수익률, 결론 등을 한 문장으로 요약해주세요.""", language="plaintext")
 	    
 st.title("💬 AI for VIP Information System")
 initial_message = (
